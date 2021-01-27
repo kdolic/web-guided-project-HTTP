@@ -21,7 +21,7 @@ function Item(props) {
   }
 
   const handleDeleteClick = () => {
-    axios.delete(`/items/${id}`)
+    axios.delete(`http://localhost:3333/items/${id}`)
       .then(res=>{
         console.log(res);
       })
