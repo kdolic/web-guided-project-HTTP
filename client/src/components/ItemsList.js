@@ -6,7 +6,7 @@ function ItemsList(props) {
     props.history.push(`/item-list/${item.id}`);
   }
 
-  console.log(props);
+  console.log('ItemsList props: ', props);
 
   return (
     <div className="items-list-wrapper">
