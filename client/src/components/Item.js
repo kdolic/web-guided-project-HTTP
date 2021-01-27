@@ -21,7 +21,7 @@ function Item(props) {
   }
 
   const handleDeleteClick = () => {
-    console.log("here");
+    
   }
 
   if (!props.items.length || !item) {
