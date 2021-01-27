@@ -50,7 +50,6 @@ const App = () => {
           props => {
             return <div>
               <ItemsList {...props} items={items} />
-              <ItemsList {...props} items={items} />
             </div>
           }
         }
