@@ -12,7 +12,7 @@ import "./styles.css";
 
 const App = () => {
   const [items, setItems] = useState([]);
-  
+
   useEffect(() => {
     const getItems = () => {
       axios
@@ -52,6 +52,8 @@ const App = () => {
         render={props => <Item {...props} items={items} setItems={setItems} />}
       />
       <Route path="/item-form" component={ItemForm} />
+      <Route path="/item-update" component={UpdateForm}/>
+      
     </div>
   );
 };
