@@ -42,14 +42,14 @@ const App = () => {
       </nav>
 
       <Route exact path="/" component={Home} />
-      {/* <Route
+
+      <Route
         exact
         path="/item-list"
-        render={props => <ItemsList {...props} items={items} />}
-      /> */}
-      <Route>
-        <ItemsList items={items}/>
-      </Route>
+        render={props => {
+          return <ItemsList {...props} items={items} 
+        }}/>}
+      />
       
       <Route path="/item-list/:id"
         render={props => <Item {...props} items={items} setItems={setItems} />}
