@@ -16,8 +16,12 @@ function Item(props) {
 
   const { id } = props.match.params;
 
-  const handleEditClick = ()=> {
+  const handleEditClick = () => {
     push(`/item-update/${id}`);
+  }
+
+  const handleDeleteClick = () => {
+    console.log("here");
   }
 
   if (!props.items.length || !item) {
