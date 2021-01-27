@@ -15,7 +15,8 @@ function Item(props) {
   );
 
   const handleEditClick = ()=> {
-    props.history.push('/item-update');
+
+    push('/item-update');
   }
 
   if (!props.items.length || !item) {
