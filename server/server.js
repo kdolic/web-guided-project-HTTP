@@ -199,6 +199,7 @@ server.put("/items/:id", (req, res) => {
     return item.id == id;
   };
   const foundItem = items.find(findItemById);
+  
   if (!foundItem) {
     return sendUserError("No Item found by that ID", res);
   } else {
