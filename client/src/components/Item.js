@@ -14,6 +14,10 @@ function Item(props) {
     thing => `${thing.id}` === props.match.params.id
   );
 
+  const handleEditClick = ()=> {
+    console.log('here');
+  }
+
   if (!props.items.length || !item) {
     return <h2>Loading item data...</h2>;
   }
@@ -44,7 +48,7 @@ function Item(props) {
         path="/item-list/:id/shipping"
         render={props => <ItemShipping {...props} item={item} />}
       />
-      <button className="md-button">
+      <button onClick={handleEditClick} className="md-button">
         Edit
       </button>
       <button className="md-button">
