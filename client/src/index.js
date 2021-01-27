@@ -45,13 +45,13 @@ const App = () => {
       <Route
         exact
         path="/item-list"
-        render={props => <ItemsList {...props} items={items} />}
+        render={props => <ItemsList items={items} />}
       />
       <Route path="/item-list/:id"
         render={props => <Item {...props} items={items} setItems={setItems} />}
       />
       <Route path="/item-form" component={ItemForm} />
-      
+
       <Route path="/item-update/:id" render={
         props => {
           return(<UpdateForm {...props} setItems={setItems}/>);
