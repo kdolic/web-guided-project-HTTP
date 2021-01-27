@@ -5,7 +5,9 @@ function ItemsList(props) {
     ev.preventDefault();
     props.history.push(`/item-list/${item.id}`);
   }
-  
+
+  console.log(props);
+
   return (
     <div className="items-list-wrapper">
       {props.items.map(item => (
