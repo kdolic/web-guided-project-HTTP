@@ -15,8 +15,7 @@ function Item(props) {
   );
 
   const handleEditClick = ()=> {
-
-    push('/item-update');
+    push(`/item-update/${item.id}`);
   }
 
   if (!props.items.length || !item) {
