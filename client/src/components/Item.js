@@ -14,8 +14,10 @@ function Item(props) {
     thing => `${thing.id}` === props.match.params.id
   );
 
+  const { id } = props.match.params;
+
   const handleEditClick = ()=> {
-    push(`/item-update/${item.id}`);
+    push(`/item-update/${id}`);
   }
 
   if (!props.items.length || !item) {
