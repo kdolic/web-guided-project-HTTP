@@ -53,7 +53,7 @@ function Item(props) {
       <button onClick={handleEditClick} className="md-button">
         Edit
       </button>
-      <button className="md-button">
+      <button onClick={handleDeleteClick} className="md-button">
         Delete
       </button>
     </div>
