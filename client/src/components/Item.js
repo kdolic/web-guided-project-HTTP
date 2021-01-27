@@ -21,7 +21,13 @@ function Item(props) {
   }
 
   const handleDeleteClick = () => {
-    
+    axios.delete(`/items/${id}`)
+      .then(res=>{
+        console.log(res);
+      })
+      .catch(err=>{
+        console.log(err);
+      })
   }
 
   if (!props.items.length || !item) {
