@@ -46,9 +46,14 @@ const App = () => {
       <Route
         exact
         path="/item-list"
-        render={props => {
-          return <ItemsList {...props} items={items} 
-        }}/>}
+        render={
+          props => {
+            return <div>
+              <ItemsList {...props} items={items} />
+              <ItemsList {...props} items={items} />
+            </div>
+          }
+        }
       />
       
       <Route path="/item-list/:id"
